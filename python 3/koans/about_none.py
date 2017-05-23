@@ -26,10 +26,13 @@ class AboutNone(Koan):
         
         Don't worry about what 'try' and 'except' do, we'll talk about this later
         """
+        # Don't forget to unindent before you try to run this code block:
         try:
             None.some_method_none_does_not_know_about()
         except Exception as ex:
             ex2 = ex
+
+        ex2
             
         # What exception has been caught?
         self.assertEqual(__, ex2.__class__.__name__)
